@@ -1,0 +1,11 @@
+{
+  "temperature": 25.3,
+  "humidity": 60,
+  "condition": "Sunny"
+}
+
+public interface WeatherApi {
+    @GET("mock_weather.json")
+    Call<WeatherResponse> getCurrentWeather();
+}
+
